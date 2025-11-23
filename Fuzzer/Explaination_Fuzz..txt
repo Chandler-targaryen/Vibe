@@ -1,0 +1,18 @@
+#Input generation for POST /auth/signup
+body = {
+    "fullname": LARGE,
+    "email": f"user_{LARGE}@example.com",
+    "password": HUGE
+}
+s_string(json.dumps(body), name="signup_body") #Fuzzable input
+
+#Input generation for POST /auth/login
+login_body = {
+    "email": f"email_{LARGE}@test.com",
+    "password": HUGE
+}
+s_string(json.dumps(login_body), name="login_body") #Fuzzable input
+
+#Input generation for POST /auth/forgot-password
+forgot_body = {"email": f"fuzz_{HUGE}@gmail.com"}
+s_string(json.dumps(forgot_body), name="forgot_body") #Fuzzable input 

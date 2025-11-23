@@ -1,24 +1,98 @@
-# Logs
-logs
+############################################
+# NODE / REACT / VITE
+############################################
+
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# environment variables
+.env
+.env.*
+
+
+############################################
+# PYTHON / FASTAPI
+############################################
+
+# Virtual environments
+venv/
+env/
+.venv/
+fuzzenv/
+*/fuzzenv/
+*/venv/
+*/env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Byte-compiled files
+*.py[cod]
+
+# Distribution / packaging
+build/
+develop-eggs/
+downloads/
+eggs/
+parts/
+sdist/
+var/
+*.egg-info/
+.eggs/
+
+
+############################################
+# DOCKER
+############################################
+
+*.pid
+*.sock
+docker-data/
+docker-volume/
+
+
+############################################
+# EDITORS / OS FILES
+############################################
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# JetBrains
+*.iml
+
+############################################
+# LOGS
+############################################
+
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+############################################
+# OTHERS
+############################################
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Temporary files
+*.temp
+*.tmp
